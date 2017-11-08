@@ -1,6 +1,6 @@
 import React from 'react';
 
-import List from './list';
+import List from './List';
 
 import './board.css';
 
