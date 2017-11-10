@@ -13,8 +13,9 @@ export default class AddForm extends React.Component {
     onSubmit(event) {
         event.preventDefault();
         const text = this.textInput.value.trim();
-        console.log(text);
-        // TODO: Add the card or list
+        if (text && this.props.onAdd) {
+            this.props.onAdd(text);
+        }
         this.textInput.value = '';
     }
 
